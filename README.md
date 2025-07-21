@@ -63,15 +63,11 @@ Los scripts permiten:
   - AMR
   - epiR
 
-Instalar en R con:
-```R
-install.packages(c("tidyverse", "data.table", "readxl", "httr", "epiR"))
-if (!requireNamespace("AMR")) install.packages("AMR")
-
 ## Datos externos
 Para reproducir los análisis, es necesario descargar:
 Genomas de AllTheBacteria.
 Datos fenotípicos y metadatos de artículos y bases públicas (NCBI, BV-BRC).
+Tabla de correspondencia entre 
 
 ## Cómo ejecutar el pipeline
 1️. Colocar los archivos de configuración (partA y partB) y las tablas suplementarias de cada estudio en una carpeta que tenga el nombre del estudio. Colocar todas las carpetas en RFF-revised.
@@ -82,9 +78,9 @@ Datos fenotípicos y metadatos de artículos y bases públicas (NCBI, BV-BRC).
 6. Ejecutar el script `estandarización MIC – 3.R` para unir los metadatos de los artículos, el NCBI y el BV-BRC y seleccionarc las muestras que tienen MIC disponible. Se generarán 4 csv en Tables/: muestras_NCBI.nuevas.coli.st.csv (datos del NCBI estandarizados como la colección de artículos), patric_metadata_st.nuevas.csv (datos del BV-BRC estandarizados como la colección de artículos), broth_microdil.csv (muestras con MIC obtenido por broth microdilution de los artículos, NCBI y BV-BRC), muestras_mic_articles.csv (recuento de antibióticos con MIC por estudio). 
 7. Descargar en AllTheBacteria los genomas asociados a los identificadores de Tables/patric_ENA_accessions.csv, Tables/NCBI_ENA_accessions.csv y Tables/ENA_accessions.articles.csv.
 8. Ejecutar AMRFinder y ResFinderPlus con los genomas que se han obtenido. Obtener las métricas de calidad de los genomas con Sylph y assembly-stats. Guardar todos estos resultados en genomes/.
-9. Ejecutar el script `Filtros de calidad.R` para obtener los identificadores de las muestras que tienen genomas de calidad. XXXX
- 
-10. Ejecutar el script `transformación MIC + análisis ResFinder.R`.  
+9. Ejecutar el script `Filtros de calidad.R` para obtener los identificadores de las muestras que tienen genomas de calidad. Se generarán 8 csv en Tables/: resumen_sylph.csv, atb_resf.csv (antibióticos que se han detectados con ResFinder), atb_amrf.csv (antibióticos que se han detectado con AMRFinderPlus), sylph_all.csv (todas las muestras con información de si pasan o no los filtros de calidad), all_summary_def_qc_clean.csv (muestras que pasan los filtros de calidad del genoma), amrf_results_accession_cruzado.completo.csv (resultados de AMRFinderPlus solo de las meustras que pasan los filtros), resf_results_accession_cruzado.csv  (resultados de ResFinder solo de las meustras que pasan los filtros). 
+10. Ejecutar el script `transformación MIC + análisis ResFinder.R`.  Transforma el MIC a fenotipo de resistencia (sensible/no sensible; no tiene en cuenta los <, >, <=, >= no interpretables). Se conservan solo los fenotipos que pasan los filtros de calidad genómicos. Determina la concordancia entre determinantes genéticos de ResFinder y fenotipo de resistencia y también las métricas de precisión diagnóstica. Se generan X archivos csv en Tables/: broth_microdil_sir_complete3.new.csv, count_comparison.clean3.csv, count_comparison.completa.clean3.csv, atb_included_ns3, resultados_detallados_resfinder_eucast.ecoli_collapsed3.csv (correpondencia fenotipo-genotipo), resultados_detallados_resfinder_ecoff.ecoli_collapsed3.csv (correpondencia fenotipo-genotipo), resultados_detallados_resfinder_clsi.ecoli_collapsed3.csv (correpondencia fenotipo-genotipo), tabla_resultados_resf_eucast3.csv (precisón diagnóstica), tabla_resultados_resf_ecoff3.csv (precisón diagnóstica), tabla_resultados_resf_clsi3.csv (precisón diagnóstica).
+
 
   
 
