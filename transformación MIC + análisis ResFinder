@@ -203,8 +203,6 @@ CLSI_sir <-
 
 # 5.1 EUCAST
 
-# EUCAST_sir <- read.csv("C:/Users/rferragud/Documents/Projecte/Tables/EUCAST_sir.csv", check.names = FALSE)
-
 # primero obtener las ENA_sample_accession del EUCAST_sir con el all_summary_def_qc_clean_accession 
 
 EUCAST_sir %>% filter(is.na(ENA_sample_accession) & is.na(ENA_run_accession) & !is.na(ENA_experiment_accession))
@@ -284,8 +282,6 @@ sobrantes_euc %>% filter(!ENA_accessions %in% remove_sam & ENA_accessions %in% r
 
 # ECOFF
 
-# ECOFF_sir <- read.csv("C:/Users/rferragud/Documents/Projecte/Tables/ECOFF_sir.csv", check.names = FALSE)
-
 # Obtener solo una columna que tenga una accession de cada muestra
 ECOFF_coaslesce <- ECOFF_sir %>% mutate(ENA_accessions = coalesce(ENA_sample_accession, ENA_run_accession)) %>%
   select(-ENA_sample_accession, -ENA_run_accession)
@@ -339,8 +335,6 @@ sobrantes_ecoff %>% filter(!ENA_accessions %in% remove_sam & ENA_accessions %in%
   pull(ENA_accessions) %>% unique()
 
 # CLSI 
-
-# CLSI_sir <- read.csv("C:/Users/rferragud/Documents/Projecte/Tables/CLSI_sir.csv", check.names = FALSE)
 
 # Obtener solo una columna que tenga una accession de cada muestra
 CLSI_coaslesce <- CLSI_sir %>% mutate(ENA_accessions = coalesce(ENA_sample_accession, ENA_run_accession)) %>%
