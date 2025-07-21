@@ -67,7 +67,7 @@ Los scripts permiten:
 Para reproducir los análisis, es necesario descargar:
 Genomas de AllTheBacteria.
 Datos fenotípicos y metadatos de artículos y bases públicas (NCBI, BV-BRC).
-Tabla de correspondencia entre 
+Tabla de correspondencia entre los antibióticos de la colección y los antibióticos o familias que es capaz de detectar AMRFinderPlus y ResFinder (Projecte/corresp_antibiotic_resf_amrf.new.ods) 
 
 ## Cómo ejecutar el pipeline
 1️. Colocar los archivos de configuración (partA y partB) y las tablas suplementarias de cada estudio en una carpeta que tenga el nombre del estudio. Colocar todas las carpetas en RFF-revised.  
