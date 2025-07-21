@@ -643,10 +643,10 @@ resumen_ord <- resumen %>%
 resumen_ord <- resumen_ord %>%
   arrange(filtro1)
 
-write.csv(resumen_ord, "C:/Users/rferragud/Documents/Projecte/genomes/resumen_sylph.csv", row.names = FALSE)
-write.csv(all_summary_def_qc_sylph.filtro8, "C:/Users/rferragud/Documents/Projecte/genomes/sylph_all.csv", row.names = FALSE)
+write.csv(resumen_ord, "C:/Users/rferragud/Documents/Projecte/Tables/resumen_sylph.csv", row.names = FALSE)
+write.csv(all_summary_def_qc_sylph.filtro8, "C:/Users/rferragud/Documents/Projecte/Tables/sylph_all.csv", row.names = FALSE)
 
-all_summary_def_qc_sylph.filtro8 <- read.csv("C:/Users/rferragud/Documents/Projecte/genomes/sylph_all.csv", check.names = FALSE)
+all_summary_def_qc_sylph.filtro8 <- read.csv("C:/Users/rferragud/Documents/Projecte/Tables/sylph_all.csv", check.names = FALSE)
 
 # df con las muestras que pasan el QC
 all_summary_def_qc_clean.temp <- all_summary_def_qc_sylph.filtro8 %>% filter(is.na(filtro1) & is.na(filtro2) & is.na(filtro3))
@@ -656,7 +656,7 @@ all_summary_def_qc_clean <- all_summary_def_qc_clean.temp %>% distinct()
 
 all_summary_def_qc_clean %>% distinct(ENA_sample_accession)
 
-write.csv(all_summary_def_qc_clean, "C:/Users/rferragud/Documents/Projecte/Tables/all_summary_def_qc_clean", row.names = F)
+write.csv(all_summary_def_qc_clean, "C:/Users/rferragud/Documents/Projecte/Tables/all_summary_def_qc_clean.csv", row.names = F)
 
 # 4. Cruzar las tablas con los resultados de resf y amrf con la del sylph #### 
 # para quedarnos con las muestras que pasan los filtros 
