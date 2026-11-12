@@ -1,0 +1,21 @@
+standard_field,standard_subfield,source_type,source_field,tab_number,value,description
+to all,internal_study_name,not applicable,not applicable,not applicable,,Identifier for the study 
+to all,measurement_sign,,,,,"Sign associated to the numerical result (e.g. >, <, ==, ≥, ≤)"
+to all,measurement_units,,,,,"Units used for measurement (mg/L, mm)"
+to all,laboratory_typing_method,,,,,"Laboratory method used to perform AST (e.g. disk diffusion, broth microdilution, agar dilution)"
+to all,laboratory_typing_platform,,,,,"Platform used to perform AST (Microscan, Phoenix, Sensititre, Vitek)"
+to all,vendor,,,,,"Vendor or manufacturer of the reagents or platform (e.g. Becton Dickinson, Biomérieux (Biom?rieux, Biomerieux, BiomŽrieux), Siemens, Trek)"
+to all,laboratory_typing_method_version_or_reagent,,,,,"Specific version or reagent used (e.g. 96-Well Plate, E- Test, GM-NE)"
+to all,testing_standard,,,,,"Name of the guideline used to perform the laboratory method, followed by the year or version if known (e.g. BSAC, CLSI, DIN, EUCAST, NARMS NCCLS,,SFM, SIR, WRG)"
+to all,other_testing_notes,,,,,Information that doesn't fit anywhere else 
+antibiotic X,measurement_sign,,,,,"Sign associated to the numerical result (e.g. >, <, ==, ≥, ≤)"
+antibiotic X,measurement_units,,,,,"Units used for measurement (mg/L, mm)"
+antibiotic X,laboratory_typing_method,,,,,"Laboratory method used to perform AST (e.g. disk diffusion, broth microdilution, agar dilution)"
+antibiotic X,laboratory_typing_platform,,,,,"Platform used to perform AST (Microscan, Phoenix, Sensititre, Vitek)"
+antibiotic X,vendor,,,,,"Vendor or manufacturer of the reagents or platform (e.g. Becton Dickinson, Biomérieux (Biom?rieux, Biomerieux, BiomŽrieux), Siemens, Trek)"
+antibiotic X,laboratory_typing_method_version_or_reagent,,,,,"Specific version or reagent used (e.g. 96-Well Plate, E- Test, GM-NE)"
+antibiotic X,testing_standard,,,,,"Name of the guideline used to perform the laboratory method, followed by the year or version if known (e.g. BSAC, CLSI, DIN, EUCAST, NARMS NCCLS,,SFM, SIR, WRG)"
+antibiotic X,other_testing_notes,,,,,Information that doesn't fit anywhere else 
+antibiotic X,measurement,,,,,Numerical measurement result (MIC or inhibition zone). Should be a number. The valid range for unit 'mg/L' is a positive number up to 1024.  the valid range for unit 'mm' is between 6 and 150. 
+antibiotic X,resistance_phenotype,,,,,"Phenotype interpretation (R: resistant, I: intermediate, S: susceptible)"
+antibiotic X,resistance_breakpoint,,,,,"Breakpoint value used for determining phenotype. If unknown, use the name and year of the guideline instead (e.g. EUCAST 2017). "
