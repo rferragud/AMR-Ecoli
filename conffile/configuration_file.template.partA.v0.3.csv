@@ -1,0 +1,21 @@
+standard_field,source_type,source_field,tab_number,value,field_description
+internal_study_name,not applicable,not applicable,not applicable,,Identifier for the study 
+bioproject_accession,,,,,ENA BioProject accession
+sample_accession,,,,,"ENA sample accession, BioSample, SAM"
+secondary_sample_accession,,,,,"ENA secondary sample accession, Sample, XRS"
+sample_alias,,,,,ENA sample alias
+run_accession,,,,,"ENA run accession, ERR"
+isolate_id_publication,,,,,Sample or isolate id used internally in publication. One row per each table/tab mentioned in source_field.  
+isolate_name_alias,,,,,Other IDs associated with this isolate or strain. Separate with '; ' if more than one
+geographic_location_country,,,,,Geographical source of samples country
+geographic_location_region,,,,,Geographical source of samples region
+geographic_location_location,,,,,"Geographical source of samples location (e.g. hospital, river, farm...)"
+latitude_and_longitude,,,,,"Geographical source of samples location coordinates (e.g. hospital, river, farm…). Specify as degrees latitude and longitude in format ""d[d.dddd] N|S d[dd.dddd] W|E"", (e.g. 38.98 N 77.11 W) or if info in different columns use format “lat; long” (e.g. column1;  column2)"
+collection_date,,,,,The date on which the sample was collected. Data format: dd/mm/yyyy or mm/yyyy or yyyy.  If info in different columns use format “day; month; year” (e.g. column1;  column2; column3)
+collected_by,,,,,Laboratory or research institution.
+host,,,,,Scientific name of the host from which bacteria was isolated or common name if unavailable. 
+isolation_source,,,,,See BioSample for standard list of isolation sources. If info in different columns use format “source; source” (e.g. column1;  column2)
+host_disease,,,,,See BioSample for standard list of host diseases. If info in different columns use format “disease; disease” (e.g. column1;  column2)
+host_tissue_sampled,,,,,See BioSample for standard list of host tissue sampled.
+host_subject_id,,,,,"A unique identifier by which each subject from which bacteria was isolated can be referred to, de-identified (e.g. #131, patient3)"
+additional_info,,,,,Information that doesn't fit anywhere else 

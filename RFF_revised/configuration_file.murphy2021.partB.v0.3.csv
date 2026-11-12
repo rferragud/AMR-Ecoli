@@ -1,0 +1,29 @@
+standard_field,standard_subfield,source_type,source_field,tab_number,value,description
+to all,internal_study_name,not applicable,not applicable,not applicable,murphy2021,
+to all,measurement_sign,missing,missing,missing,missing,> < ==
+to all,measurement_units,missing,missing,missing,missing,"mg/L, mm"
+to all,laboratory_typing_method,manuscript,not applicable,not applicable,broth microdilution,"disk diffusion, broth microdilution, agar dilution, missing"
+to all,laboratory_typing_platform,missing,missing,missing,missing,"Microscan, Phoenix, Sensititre, Vitek"
+to all,vendor,missing,missing,missing,missing,"Becton Dickinson, Biomérieux (Biom?rieux, Biomerieux, BiomŽrieux), Siemens, Trek"
+to all,laboratory_typing_method_version_or_reagent,missing,missing,missing,missing,"96-Well Plate, E- Test, GM-NE"
+to all,testing_standard,manuscript,not applicable,not applicable,EUCAST 2016,"BSAC, CLSI, DIN, EUCAST, NARMS NCCLS,,SFM, SIR, WRG, missing"
+to all,other_testing_notes,manuscript,not applicable,not applicable,The AST was conducted as described in https://doi.org/10.1371/journal.pcbi.1006258 ,
+to all,measurement,missing,missing,missing,missing,Antibiotic concentration measurement. Should be a number. The valid range for unit 'mg/L' is a positive number up to 1024.  the valid range for unit 'mm' is between 6 and 150. 
+ampicillin,resistance_phenotype,file,TABLE S1.edited.csv,missing,Ampicillin,RIS
+ampicillin,resistance_breakpoint,manuscript,not applicable,not applicable,6,μg/ml
+cefotaxime,resistance_phenotype,file,TABLE S1.edited.csv,missing,Cefotaxime,
+cefotaxime,resistance_breakpoint,manuscript,not applicable,not applicable,4,
+ceftazidime,resistance_phenotype,file,TABLE S1.edited.csv,missing,Ceftazidime,
+ceftazidime,resistance_breakpoint,manuscript,not applicable,not applicable,0.25,
+cefuroxime,resistance_phenotype,file,TABLE S1.edited.csv,missing,Cefuroxime,
+cefuroxime,resistance_breakpoint,manuscript,not applicable,not applicable,8,
+cephalothin,resistance_phenotype,file,TABLE S1.edited.csv,missing,Cephalothin,
+cephalothin,resistance_breakpoint,manuscript,not applicable,not applicable,20,
+ciprofloxacin,resistance_phenotype,file,TABLE S1.edited.csv,missing,Ciprofloxacin,
+ciprofloxacin,resistance_breakpoint,manuscript,not applicable,not applicable,1,
+gentamicin,resistance_phenotype,file,TABLE S1.edited.csv,missing,Gentamycin,
+gentamicin,resistance_breakpoint,manuscript,not applicable,not applicable,4,
+tobramycin,resistance_phenotype,file,TABLE S1.edited.csv,missing,Tobramycin,
+tobramycin,resistance_breakpoint,manuscript,not applicable,not applicable,8,
+trimethoprim,resistance_phenotype,file,TABLE S1.edited.csv,missing,Trimethoprim,
+trimethoprim,resistance_breakpoint,missing,missing,missing,missing,
