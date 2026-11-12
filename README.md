@@ -48,8 +48,8 @@ Los scripts permiten:
 
 **`scripts/`**: Código en R para las diferentes etapas del pipeline.  
 **`dataset/`**: Listado con todos los bioprojects de E. coli.  
-**`RFF-revised/`**: Estudios con las plantillas CSV completadas.  
-**`conffile/`**: Plantillas CSV PartA y PartB, SOP con instrucciones y ejemplos completados.  
+**`RFF-revised/`**: Estudios con las plantillas CSV completadas y las tablas suplementarias. Incluye un ejemplo completo. 
+**`conffile/`**: Plantillas CSV PartA y PartB, SOP con instrucciones.  
 **`genomes/`**: Resultados de AMRFinderPlus, ResFinder y métricas de Sylph.  
 **`Tables/`**: Resultados finales.
 
